@@ -816,7 +816,7 @@ pragma solidity >0.6.0 <0.8.0;
 
 /// @dev LinkToken, an ERC20/ERC677 Telos oracle token with 1 billion supply
 contract OTLOSToken is ITypeAndVersion, LinkERC20, ERC677 {
-  uint private constant TOTAL_SUPPLY = 10**27;
+  uint private constant TOTAL_SUPPLY = 10**6;
   string private constant NAME = 'Telos Oracle Token';
   string private constant SYMBOL = 'OTLOS';
 
@@ -904,4 +904,4 @@ contract OTLOSToken is ITypeAndVersion, LinkERC20, ERC677 {
     require(recipient != address(this), "LinkToken: transfer/approve to this contract address");
     _;
   }
-}
+}       
